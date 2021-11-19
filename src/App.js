@@ -46,7 +46,7 @@ function App() {
         </header>
 
         <main class="main">
-            {/* <!--==================== HOME ====================--> */}
+            {/* <!--==================== Swiper ====================--> */}
             <section class="home container" id="home">
                 <div class="swiper home-swiper">
                     <div class="swiper-wrapper">
@@ -90,7 +90,7 @@ function App() {
                                 </div>
     
                                 <div class="home__data">
-                                    <h3 class="home__subtitle">#1 Top Whisky</h3>
+                                    <h3 class="home__subtitle">#2 Top Whisky</h3>
                                     <p class="home__description"> 50Ml de Red Label, 4 morangos macerados e o restante de guaraná.
                                     </p>
 
@@ -116,7 +116,7 @@ function App() {
                                 </div>
     
                                 <div class="home__data">
-                                    <h3 class="home__subtitle">#1 Top Vodka</h3>
+                                    <h3 class="home__subtitle">#3 Top Vodka</h3>
                                     <p class="home__description"> 50Ml de Vodka, água tônica, 1/2 limão e Hortelâ.
                                     </p>
 
