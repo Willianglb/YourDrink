@@ -1,4 +1,5 @@
 import './App.css';
+import HomeBanner from './components/HomeBanner/index'
 
 function App() {
   return (
@@ -46,91 +47,7 @@ function App() {
         </header>
 
         <main class="main">
-            {/* <!--==================== Swiper ====================--> */}
-            <section class="home container" id="home">
-                <div class="swiper home-swiper">
-                    <div class="swiper-wrapper">
-                        {/* <!-- HOME SLIDER 1 --> */}
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home1-img.png" alt="" class="home__img" />
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">Caipirinha de vinho</h4>
-                                        <span class="home__details-subtitle">Vinho com limão e Gelo</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#1 Top Caipirinha</h3>
-                                    <p class="home__description"> Em média, 500Ml de vinho com 1 limão e 1 colher de açúcar.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Pedir Agora</a>
-                                        <a href="#" class="button--link button--flex">Menu de caipirinhas <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        {/* <!-- HOME SLIDER 2 --> */}
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home2-img.png" alt="" class="home__img"/>
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">RED HIGHBALL SWEET</h4>
-                                        <span class="home__details-subtitle">Red Label, Morango e guaraná</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#2 Top Whisky</h3>
-                                    <p class="home__description"> 50Ml de Red Label, 4 morangos macerados e o restante de guaraná.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Pedir Agora</a>
-                                        <a href="#" class="button--link button--flex">Menu de whiskies <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        {/* <!-- HOME SLIDER 3 --> */}
-                        <section class="swiper-slide">
-                            <div class="home__content grid">
-                                <div class="home__group">
-                                    <img src="assets/img/home3-img.png" alt="" class="home__img" />
-                                    <div class="home__indicator"></div>
-    
-                                    <div class="home__details-img">
-                                        <h4 class="home__details-title">SMIRNOFF TÔNICA</h4>
-                                        <span class="home__details-subtitle">Famosa Beats GT</span>
-                                    </div>
-                                </div>
-    
-                                <div class="home__data">
-                                    <h3 class="home__subtitle">#3 Top Vodka</h3>
-                                    <p class="home__description"> 50Ml de Vodka, água tônica, 1/2 limão e Hortelâ.
-                                    </p>
-
-                                    <div class="home__buttons">
-                                        <a href="#" class="button">Pedir Agora</a>
-                                        <a href="#" class="button--link button--flex">Menu de vodkas <i class='bx bx-right-arrow-alt button__icon'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
+            <HomeBanner />
 
             {/* <!--==================== Bebidas ====================--> */}
             <section class="section trick" id="trick">
