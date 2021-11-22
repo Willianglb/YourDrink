@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const BannerStyles = styled.div`
     width: 100%;
-    .swiper-pagination{
+    
+    .swiper-pagination {
     position: initial;
     margin-top: var(--mb-1);
     }

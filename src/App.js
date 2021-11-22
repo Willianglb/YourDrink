@@ -18,18 +18,19 @@ function App() {
                         </li>
 
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#trick" class="nav__link">Candy</a>
+                            <a href="#bebidas" class="nav__link">Bebidas</a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#new" class="nav__link">New</a>
                         </li>
 
-                        <a href="#" class="button button--ghost">Support</a>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Sobre</a>
+                        </li>
+
+                        {/* Me chama */}
+                        {/* <a href="#" class="button button--ghost">Support</a> */}
                     </ul>
 
                     <div class="nav__close" id="nav-close">
@@ -50,7 +51,7 @@ function App() {
             <HomeBanner />
 
             {/* <!--==================== Bebidas ====================--> */}
-            <section class="section trick" id="trick">
+            <section class="section trick" id="bebidas">
                 <h2 class="section__title">Bebidas</h2>
 
                 <div class="trick__container container grid">
