@@ -2,6 +2,7 @@ import './App.css';
 import HomeBanner from './components/HomeBanner/index';
 import Header from './components/Header/index';
 import ListDrinks from './components/ListDrinks/index';
+import Correio from './components/Correio';
 
 function App() {
   return (
@@ -15,27 +16,8 @@ function App() {
         {/* <!--==================== Bebidas ====================--> */}
         <ListDrinks />
 
-        {/* <!--==================== Modal ====================--> */}
-        {/* Fazer modal que abre e apresenta um lugar para colocar o nome quando clicado na bebida escolhida */}
-
         {/* <!--==================== Mensagens ====================--> */}
-        <section class="section newsletter">
-          <div class="newsletter__container container">
-            <h2 class="section__title">Correio</h2>
-            <p class="newsletter__description">
-              Fique a vontade para falar o que quiser comigo
-            </p>
-
-            <form action="" class="newsletter__form">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                class="newsletter__input"
-              />
-              <button class="button">Enviar</button>
-            </form>
-          </div>
-        </section>
+        <Correio />
       </main>
 
       {/* <!--==================== FOOTER ====================--> */}

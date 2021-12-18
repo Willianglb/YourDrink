@@ -9,7 +9,8 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
-import { Alert } from '@mui/material';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 
 const ListaBebidas = [
     {
@@ -69,6 +70,7 @@ const ListDrinks = () => {
     const [id, setId] = useState("");
 
     const [semNome, setSemNome] = useState(false);
+    const [alertOpen, setAlertOpen] = useState(false);
 
     const [usuario, setUsuario] = React.useState("");
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -96,6 +98,11 @@ const ListDrinks = () => {
     return (
         <section className="section trick" id="bebidas">
           <h2 className="section__title">Bebidas</h2>
+            {alertOpen ? (
+                <Stack sx={{ width: '100%' }} spacing={2}>
+                    <Alert variant="filled" severity="success">Pedido feito {usuario}!</Alert>
+                </Stack>
+            ) : null}
           <div className="trick__container container grid">
 
             {ListaBebidas.map((item) => (
@@ -144,7 +151,10 @@ const ListDrinks = () => {
                                     const data: any = await addDrink({ variables: { name: usuario, bebidasId: id }});
 
                                     if (data) {
-                                        alert(`Pedido feito ${data?.addPedido?.id || usuario}!`)
+                                        setAlertOpen(true)
+                                        setTimeout(() => {
+                                            setAlertOpen(false);
+                                        }, 5000);
                                     }
 
                                     handleClose();
