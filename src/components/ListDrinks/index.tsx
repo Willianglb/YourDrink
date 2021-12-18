@@ -17,7 +17,7 @@ const ListaBebidas = [
         name: "Red Highball Sweet",
         photo: "../../assets/img/redHighballSweet.jpg",
         Desc: "Whisky com morango e guaraná",
-        id: 1,
+        id: 1
     },
     {
         name: "Red Highball Citrus",
