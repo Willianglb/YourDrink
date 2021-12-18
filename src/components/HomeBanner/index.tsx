@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,10 +7,6 @@ import 'swiper/swiper.min.css'
 import {BannerStyles} from './HomeBanner.styles';
 
 const HomeBanner = () => {
-
-    // useEffect(() => {
-    //     createSwiper();
-    // }, []);
 
     // Falta estilizar
 
@@ -29,7 +25,7 @@ const HomeBanner = () => {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+            // onSlideChange={() => console.log('slide change')}
             >
             <SwiperSlide>
                 {/* <!-- HOME SLIDER 1 --> */}
