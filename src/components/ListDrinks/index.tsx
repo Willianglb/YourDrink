@@ -4,60 +4,70 @@ import { useMutation } from '@apollo/client';
 
 import * as S from './ListDrinks.styles';
 
+//Imagens
+import OO1 from '../../assets/img/redHighballSweet.jpg';
+import OO2 from '../../assets/img/redHighballCitrus.jpg';
+import OO3 from '../../assets/img/ShotHorse.jpg';
+import OO4 from '../../assets/img/whiskyTropical.jpg';
+import OO5 from '../../assets/img/CaipirinhaVinho.jpg';
+import OO6 from '../../assets/img/caipiroskadeLimao.jpg';
+import OO7 from '../../assets/img/caipiroskadeMorango.jpg';
+import OO8 from '../../assets/img/Surprise.jpg';
+
 // Material-ui
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
 const ListaBebidas = [
     {
         name: "Red Highball Sweet",
-        photo: "../../assets/img/redHighballSweet.jpg",
+        photo: OO1,
         Desc: "Whisky com morango e guaraná",
         id: 1
     },
     {
         name: "Red Highball Citrus",
-        photo: "../../assets/img/redHighballCitrus.jpg",
+        photo: OO2,
         Desc: "Whisky com limão e soda",
         id: 2
     },
     {
         name: "Shot Horse",
-        photo: "../../assets/img/ShotHorse.jpg",
+        photo: OO3,
         Desc: "Shot de whisky com gelo",
         id: 3
     },
     {
         name: "Whisky Tropical",
-        photo: "assets/img/whiskyTropical.jpg",
+        photo: OO4,
         Desc: "Whisky, Energético Tropical e laranja",
         id: 4
     },
     {
         name: "Caipirinha de vinho",
-        photo: "assets/img/CaipirinhaVinho.jpg",
+        photo: OO5,
         Desc: "Caipirinha de vinho com limão",
         id: 5
     },
     {
         name: "Caipiroska de limão",
-        photo: "assets/img/caipiroskadeLimao.jpg",
+        photo: OO6,
         Desc: "Caipiroska de limão",
         id: 6
     },
     {
         name: "Caipiroska de morango",
-        photo: "assets/img/caipiroskadeMorango.jpg",
+        photo: OO7,
         Desc: "Caipiroska de morango",
         id: 7
     },
     {
         name: "Surprise",
-        photo: "assets/img/Surprise.jpg",
+        photo: OO8,
         Desc: "?",
         id: 8
     }
@@ -98,11 +108,6 @@ const ListDrinks = () => {
     return (
         <section className="section trick" id="bebidas">
           <h2 className="section__title">Bebidas</h2>
-            {alertOpen ? (
-                <Stack sx={{ width: '100%' }} spacing={2}>
-                    <Alert variant="filled" severity="success">Pedido feito {usuario}!</Alert>
-                </Stack>
-            ) : null}
           <div className="trick__container container grid">
 
             {ListaBebidas.map((item) => (
@@ -170,6 +175,10 @@ const ListDrinks = () => {
                     </Box>
                 </Modal>
             )}
+
+            <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleClose}>
+                <Alert variant="filled" severity="success">Pedido feito {usuario}!</Alert>
+            </Snackbar>
         </section>
     )
 }
