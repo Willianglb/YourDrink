@@ -3,6 +3,7 @@ import React from "react";
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 
 const Correio = () => {
     const [nome, setNome] = React.useState("");
@@ -28,13 +29,19 @@ const Correio = () => {
                         defaultValue=""
                         value={nome}
                         onChange={handleChange}
+                        fullWidth={true}
                     />
                     <FormControlLabel control={<Checkbox />} label="Anonimo" />
                 </div>
-                <div>
-
-                    <button className="button">Enviar</button>
+                <div className="newsletter__div">
+                    <TextareaAutosize
+                        aria-label="minimum height"
+                        minRows={6}
+                        placeholder="Escreva sua mensagem..."
+                        style={{ width: 280 }}
+                    />
                 </div>
+                <button className="button">Enviar</button>
             </form>
             </div>
         </section>

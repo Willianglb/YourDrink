@@ -604,8 +604,13 @@ button{
   background: var(--container-color);
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   border-radius: .75rem;
+}
+
+.newsletter__div{
+  width: 100%;
 }
 
 .newsletter__input{

@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
-const QUERY_PEDIDOS = gql`
-query GetDogs {
+export const QUERY_PEDIDOS = gql`
+query getPedidos {
     pedidos {
       id
       name

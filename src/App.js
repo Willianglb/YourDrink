@@ -3,25 +3,27 @@ import HomeBanner from './components/HomeBanner/index';
 import Header from './components/Header/index';
 import ListDrinks from './components/ListDrinks/index';
 import Correio from './components/Correio';
+import ResumeDrinks from './components/ResumeDrinks';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
 
       <main class="main">
+        <ResumeDrinks />
         {/* <!--==================== Swiper Inicial ====================--> */}
-        <HomeBanner />
+        {/* <HomeBanner /> */}
 
         {/* <!--==================== Bebidas ====================--> */}
-        <ListDrinks />
+        {/* <ListDrinks /> */}
 
         {/* <!--==================== Mensagens ====================--> */}
-        <Correio />
+        {/* <Correio /> */}
       </main>
 
       {/* <!--==================== FOOTER ====================--> */}
-      <footer class="footer section">
+      {/* <footer class="footer section">
         <div class="footer__container container grid">
           <div class="footer__content">
             <a href="#" class="footer__logo">
@@ -78,12 +80,12 @@ function App() {
 
         <img src="assets/img/footer1-img.png" alt="" class="footer__img-one" />
         <img src="assets/img/footer2-img.png" alt="" class="footer__img-two" />
-      </footer>
+      </footer> */}
 
       {/* <!--=============== SCROLL UP ===============--> */}
-      <a href="#" class="scrollup" id="scroll-up">
+      {/* <a href="#" class="scrollup" id="scroll-up">
         <i class="bx bx-up-arrow-alt scrollup__icon"></i>
-      </a>
+      </a> */}
     </div>
   )
 }
