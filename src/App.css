@@ -477,6 +477,10 @@ button{
   bottom: 0;
 }
 
+.drink_done{
+  background-color: green;
+}
+
 .trick__icon{
   font-size: 1.25rem;
   color: var(--title-color);
