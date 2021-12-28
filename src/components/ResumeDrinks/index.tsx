@@ -5,13 +5,13 @@ import { QUERY_PEDIDOS } from '../../services/queries';
 import { useMutation, useQuery } from '@apollo/client';
 
 //Imagens
-import OO1 from '../../assets/img/redHighballSweet.jpg';
-import OO2 from '../../assets/img/redHighballCitrus.jpg';
-import OO3 from '../../assets/img/ShotHorse.jpg';
-import OO4 from '../../assets/img/whiskyTropical.jpg';
-import OO5 from '../../assets/img/CaipirinhaVinho.jpg';
-import OO6 from '../../assets/img/caipiroskadeLimao.jpg';
-import OO7 from '../../assets/img/caipiroskadeMorango.jpg';
+import OO1 from '../../assets/img/1.png';
+import OO2 from '../../assets/img/2.png';
+import OO3 from '../../assets/img/3.png';
+import OO4 from '../../assets/img/4.png';
+import OO5 from '../../assets/img/5.png';
+import OO6 from '../../assets/img/6.png';
+import OO7 from '../../assets/img/7.png';
 import OO8 from '../../assets/img/Surprise.jpg';
 
 const ListaBebidas = [
