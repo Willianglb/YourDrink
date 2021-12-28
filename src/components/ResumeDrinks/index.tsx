@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import { QUERY_PEDIDOS } from '../../services/queries';
-import { useQuery } from '@apollo/client';
+// import { TRADE_DONE } from "../../services/mutations";
+import { useMutation, useQuery } from '@apollo/client';
 
 //Imagens
 import OO1 from '../../assets/img/redHighballSweet.jpg';
@@ -70,23 +71,29 @@ const ResumeDrinks = () => {
     if (loading) return <p>Carregando...</p>;
     if (error) return <h1>{error}</h1>;
 
-    if(data) {
-        const list = data.pedidos.bebidasId;
+    const DrinkDone = (id: any) => {
+        // const [addDrink] = useMutation(TRADE_DONE, ({ variables: { bebidasId: id }}));
+    }
 
+    if(data) {
         return (
             <div className="trick__container container grid">
-                {data.pedidos.map((item: any) => (
-                    <div className="trick__content" key={item.id}>
-                        {console.log("data", data.pedidos)}
+                {data.pedidos.map((item: any) => {
+                    const list = item.bebidasId;
+                    const drinkSearch = ListaBebidas.find(x => x.id === parseInt(list));
+                    return (
+                        <div className="trick__content" key={item.id + "" + item.name} >
                             <img
-                            src={item.id}
-                            alt=""
-                            className="trick__img"
+                                src={drinkSearch?.photo}
+                                alt=""
+                                className="trick__img"
                             />
                             <h3 className="trick__title">{item.name}</h3>
-                            <button className="button trick__button" />
-                    </div>
-                ))}
+                            <h3>{drinkSearch?.name}</h3>
+                            <button className="button trick__button" onClick={() => DrinkDone(item.id)} />
+                            {item.done ? <p className="drink_done" >Feito!</p> : null}
+                        </div>
+                    )})}
             </div>
         )
     }
