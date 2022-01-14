@@ -66,10 +66,22 @@ const ListaBebidas = [
         id: 7
     },
     {
+        name: "Caipirinha de limão",
+        photo: OO6,
+        Desc: "Caipirinha feita com velho barreiro de limão",
+        id: 8
+    },
+    {
+        name: "Caipirinha de morango",
+        photo: OO7,
+        Desc: "Caipirinha feita com velho barreiro de morango",
+        id: 9
+    },
+    {
         name: "Surprise",
         photo: OO8,
-        Desc: "?",
-        id: 8
+        Desc: "Gin, chá, baly e outras coisinhas...",
+        id: 10
     }
 ]
 
@@ -132,12 +144,12 @@ const ListDrinks = () => {
                         <Avatar
                             alt={title}
                             src={foto}
-                            sx={{ width: 56, height: 56 }}
+                            sx={{ width: 90, height: 90, left: "40%" }}
                         />
                         <S.ModalContent>
                             <h1>{title}</h1>
                             <p>{desc}</p>
-                            {semNome && <p>Insira Seu nome</p>}
+                            {semNome && <S.Aviso>*Insira seu nome*</S.Aviso>}
                             <TextField
                                 required
                                 id="outlined-required"
@@ -146,6 +158,7 @@ const ListDrinks = () => {
                                 value={usuario}
                                 onChange={handleChange}
                             />
+                            <br/>
                             <button onClick={async e => {
                                 e.preventDefault();
                                 if (usuario === "") {

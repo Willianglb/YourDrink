@@ -4,7 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+
 import {BannerStyles} from './HomeBanner.styles';
+
+import vinho from '../../assets/img/5.png';
+import Redball from '../../assets/img/1.png';
+import barreiro from '../../assets/img/6.png';
 
 const HomeBanner = () => {
 
@@ -32,7 +37,7 @@ const HomeBanner = () => {
                 <section className="swiper-slide">
                     <div className="home__content grid">
                         <div className="home__group">
-                            <img src="assets/img/home1-img.png" alt="" className="home__img" />
+                            <img src={vinho} alt="" className="home__img" />
                             <div className="home__indicator"></div>
 
                             <div className="home__details-img">
@@ -59,7 +64,7 @@ const HomeBanner = () => {
                 <section className="swiper-slide">
                             <div className="home__content grid">
                                 <div className="home__group">
-                                    <img src="assets/img/home2-img.png" alt="" className="home__img"/>
+                                    <img src={Redball} alt="" className="home__img"/>
                                     <div className="home__indicator"></div>
 
                                     <div className="home__details-img">
@@ -86,18 +91,18 @@ const HomeBanner = () => {
                 <section className="swiper-slide">
                             <div className="home__content grid">
                                 <div className="home__group">
-                                    <img src="assets/img/home3-img.png" alt="" className="home__img" />
+                                    <img src={barreiro} alt="" className="home__img" />
                                     <div className="home__indicator"></div>
 
                                     <div className="home__details-img">
-                                        <h4 className="home__details-title">SMIRNOFF TÔNICA</h4>
-                                        <span className="home__details-subtitle">Famosa Beats GT</span>
+                                        <h4 className="home__details-title">Caipirinha do vadinho</h4>
+                                        <span className="home__details-subtitle">Velho barreiro, limão e açucar</span>
                                     </div>
                                 </div>
 
                                 <div className="home__data">
-                                    <h3 className="home__subtitle">#3 Top Vodka</h3>
-                                    <p className="home__description"> 50Ml de Vodka, água tônica, 1/2 limão e Hortelâ.
+                                    <h3 className="home__subtitle">#3 Top cachaça</h3>
+                                    <p className="home__description"> Em média, 2 limões com 1 dose de cachaça e 1 colher de açúcar.
                                     </p>
 
                                     <div className="home__buttons">

@@ -42,8 +42,8 @@ export const ModalContent = styled.div`
   }
   button {
     padding: 10px 24px;
-    background: #141414;
-    color: #fff;
+    background: #daa520;
+    color: black;
     border: none;
   }
 `;
@@ -57,4 +57,8 @@ export const CloseModalButton = styled.button`
   height: 32px;
   padding: 0;
   z-index: 10;
+`;
+
+export const Aviso = styled.p`
+  color: red;
 `;
