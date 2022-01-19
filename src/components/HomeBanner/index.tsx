@@ -23,7 +23,7 @@ const HomeBanner = () => {
             centeredSlides={true}
             loop={true}
             spaceBetween={30}
-            slidesPerView={1}
+            slidesPerView={1.2}
             pagination={{clickable: true }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
@@ -45,7 +45,7 @@ const HomeBanner = () => {
 
                         <div className="home__data">
                             <h3 className="home__subtitle">#1 Top Caipirinha</h3>
-                            <p className="home__description"> Em média, 500Ml de vinho com 1 limão e 1 colher de açúcar.
+                            <p className="home__description"> Em média, 400Ml de vinho com 2 limão e 1 colher de açúcar.
                             </p>
                         </div>
                     </div>

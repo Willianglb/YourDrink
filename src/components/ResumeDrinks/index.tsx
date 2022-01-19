@@ -11,6 +11,7 @@ import OO5 from '../../assets/img/5.png';
 import OO6 from '../../assets/img/6.png';
 import OO7 from '../../assets/img/7.png';
 import OO8 from '../../assets/img/Surprise.jpg';
+import OO9 from '../../assets/img/dado.png';
 
 const ListaBebidas = [
     {
@@ -58,8 +59,14 @@ const ListaBebidas = [
     {
         name: "Surprise",
         photo: OO8,
-        Desc: "?",
-        id: 8
+        Desc: "Gin, chá, baly e outras coisinhas...",
+        id: 10
+    },
+    {
+        name: "Aleatório",
+        photo: OO9,
+        Desc: "Bebida sorteada a partir da lista de bebidas",
+        id: 11
     }
 ]
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ADD_PEDIDOS} from '../../services/mutations';
+import { ADD_PEDIDOS } from '../../services/mutations';
 import { useMutation } from '@apollo/client';
 
 import * as S from './ListDrinks.styles';
@@ -13,6 +13,7 @@ import OO5 from '../../assets/img/5.png';
 import OO6 from '../../assets/img/6.png';
 import OO7 from '../../assets/img/7.png';
 import OO8 from '../../assets/img/Surprise.jpg';
+import OO9 from '../../assets/img/dado.png';
 
 // Material-ui
 import Modal from '@mui/material/Modal';
@@ -58,26 +59,26 @@ const ListaBebidas = [
     {
         name: "Caipiroska de limão",
         photo: OO6,
-        Desc: "Caipiroska de limão",
+        Desc: "Caipiroska de limão (Feito com Vodka)",
         id: 6
     },
     {
         name: "Caipiroska de morango",
         photo: OO7,
-        Desc: "Caipiroska de morango",
+        Desc: "Caipiroska de morango (Feito com Vodka)",
         id: 7
     },
     {
         name: "Caipirinha de limão",
         photo: OO6,
-        Desc: "Caipirinha feita com velho barreiro de limão",
+        Desc: "Caipirinha de limão feita com velho barreiro",
         id: 8,
         href: 'caipirinha'
     },
     {
         name: "Caipirinha de morango",
         photo: OO7,
-        Desc: "Caipirinha feita com velho barreiro de morango",
+        Desc: "Caipirinha de morango feita com velho barreiro",
         id: 9
     },
     {
@@ -85,6 +86,12 @@ const ListaBebidas = [
         photo: OO8,
         Desc: "Gin, chá, baly e outras coisinhas...",
         id: 10
+    },
+    {
+        name: "Aleatório",
+        photo: OO9,
+        Desc: "Bebida sorteada a partir da lista de bebidas",
+        id: 11
     }
 ]
 
@@ -114,8 +121,6 @@ const ListDrinks = () => {
         setDesc(desc);
         setFoto(photo);
         setId(idString);
-        console.log("idString", idString)
-        console.log("id", id)
         
         handleOpen();
     };
@@ -154,12 +159,14 @@ const ListDrinks = () => {
                             <p>{desc}</p>
                             {semNome && <S.Aviso>*Insira seu nome*</S.Aviso>}
                             <TextField
+                                sx={{bgcolor: "white"}}
                                 required
                                 id="outlined-required"
                                 label="Digite seu nome"
                                 defaultValue=""
                                 value={usuario}
                                 onChange={handleChange}
+                                color='warning'
                             />
                             <br/>
                             <button onClick={async e => {
@@ -204,9 +211,9 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
+    width: '90%',
+    bgcolor: 'black',
+    border: '2px solid #fff',
     boxShadow: 24,
     p: 4,
 };

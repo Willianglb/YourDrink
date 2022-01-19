@@ -13,25 +13,9 @@
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
 
-  /*Green gradient*/
-  --body-color: linear-gradient(
-    90deg,
-    hsl(104, 28%, 40%) 0%,
-    hsl(58, 28%, 40%) 100%
-  );
-  --container-color: linear-gradient(
-    136deg,
-    hsl(104, 28%, 35%) 0%,
-    hsl(58, 28%, 35%) 100%
-  );
-
   /*Red gradient*/
-  /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
-  --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%); */
-
-  /*Black solid*/
-  /* --body-color: hsl(30, 8%, 8%);
-  --container-color: hsl(30, 8%, 10%); */
+  --body-color: linear-gradient(90deg, #5c450c 0%, #daa520 100%);
+  --container-color: linear-gradient(360deg, black 0%, #382b0a 100%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -199,6 +183,7 @@ button {
     position: fixed;
     width: 100%;
     background: var(--container-color);
+    border: 2px white;
     top: -150%;
     left: 0;
     padding: 3.5rem 0;
@@ -647,6 +632,7 @@ button {
 
 /*=============== FOOTER ===============*/
 .footer {
+  top: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -675,7 +661,7 @@ button {
 }
 
 .footer__container {
-  row-gap: 2rem;
+  row-gap: 0.50rem;
 }
 
 .footer__logo {

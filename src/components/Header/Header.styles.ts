@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
   width: 100%;
-  /* background: var(--body-color);  */
-  background: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
+  background: linear-gradient(90deg, #5c450c 0%, #daa520 100%);
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: var(--z-fixed); */
   z-index: 100;
 
   .nav {
-    /* height: var(--header-height); */
     height: 3.5rem;
     display: flex;
     justify-content: space-between;

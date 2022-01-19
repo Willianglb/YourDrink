@@ -38,7 +38,7 @@ export const ModalContent = styled.div`
   line-height: 1.8;
   color: #141414;
   p {
-    margin-bottom: 1rem;
+    color: #ddd;
   }
   button {
     padding: 10px 24px;
