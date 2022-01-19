@@ -85,7 +85,7 @@ const HomeBanner = () => {
 
                                 <div className="home__data container">
                                     <h3 className="home__subtitle">#3 Top cachaça</h3>
-                                    <p className="home__description"> Em média, 2 limões com 1 dose de cachaça e 1 colher de açúcar.
+                                    <p className="home__description"> Em média, 2 limões com uma grande dose de cachaça e 1 colher de açúcar.
                                     </p>
                                 </div>
                             </div>

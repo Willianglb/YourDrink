@@ -24,6 +24,7 @@ export const HeaderStyles = styled.header`
   .nav__logo-img {
     width: 100%;
     height: 100%;
+    left: 100px;
   }
 
   .nav__link,
