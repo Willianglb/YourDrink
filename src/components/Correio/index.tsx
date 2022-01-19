@@ -5,6 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 
+// Deixado de lado
 const Correio = () => {
     const [nome, setNome] = React.useState("");
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

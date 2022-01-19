@@ -6,7 +6,6 @@ query getPedidos {
       id
       name
       bebidasId
-      done
     }
 }
 `;

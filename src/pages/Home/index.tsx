@@ -1,2 +1,86 @@
-import React from "react";
+import React from 'react';
+
+import HomeBanner from '../../components/HomeBanner/index';
+import Header from '../../components/Header/index';
+import ListDrinks from '../../components/ListDrinks/index';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+
+      <main className="main">
+        {/* <!--==================== Swiper Inicial ====================--> */}
+        <HomeBanner />
+
+        {/* <!--==================== Bebidas ====================--> */}
+        <ListDrinks />
+      </main>
+
+      {/* <!--==================== FOOTER ====================--> */}
+      <footer className="footer section">
+        <div className="footer__container container grid">
+          <div className="footer__content">
+            <a href="#" className="footer__logo">
+              <img src="assets/img/logo.png" alt="" className="footer__logo-img" />
+              Birthday
+            </a>
+
+            <p className="footer__description">Aproveite a festa.</p>
+
+            <div className="footer__social">
+              <a
+                href="https://www.linkedin.com/in/willianglb/"
+                className="footer__social-link"
+              >
+                <i className="bx bxl-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/willianglb/"
+                className="footer__social-link"
+              >
+                <i className="bx bxl-instagram-alt"></i>
+              </a>
+              <a
+                href="https://twitter.com/willglb"
+                className="footer__social-link"
+              >
+                <i className="bx bxl-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="footer__content">
+            <h3 className="footer__title">Sobre:</h3>
+
+            <ul className="footer__links">
+              <li>
+                <a href="https://www.instagram.com/willianglb/" className="footer__link">
+                  Willian Botelho
+                </a>
+              </li>
+              <li>
+                <a href="#" className="footer__link">
+                  Gabriel Wedig
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span className="footer__copy">&#169; Willianglb</span>
+
+        <img src="assets/img/footer1-img.png" alt="" className="footer__img-one" />
+        <img src="assets/img/footer2-img.png" alt="" className="footer__img-two" />
+      </footer>
+
+      {/* <!--=============== SCROLL UP ===============--> */}
+      <a href="#" className="scrollup" id="scroll-up">
+        <i className="bx bx-up-arrow-alt scrollup__icon"></i>
+      </a>
+    </div>
+  )
+}
+
+export default App;
 

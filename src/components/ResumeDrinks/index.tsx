@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-
+import React from "react";
 import { QUERY_PEDIDOS } from '../../services/queries';
-// import { TRADE_DONE } from "../../services/mutations";
-import { useMutation, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 
 //Imagens
 import OO1 from '../../assets/img/1.png';
@@ -71,10 +69,6 @@ const ResumeDrinks = () => {
     if (loading) return <p>Carregando...</p>;
     if (error) return <h1>{error}</h1>;
 
-    const DrinkDone = (id: any) => {
-        // const [addDrink] = useMutation(TRADE_DONE, ({ variables: { bebidasId: id }}));
-    }
-
     if(data) {
         return (
             <div className="trick__container container grid">
@@ -90,7 +84,7 @@ const ResumeDrinks = () => {
                             />
                             <h3 className="trick__title">{item.name}</h3>
                             <h3>{drinkSearch?.name}</h3>
-                            <button className="button trick__button" onClick={() => DrinkDone(item.id)} />
+                            <button className="button trick__button" />
                             {item.done ? <p className="drink_done" >Feito!</p> : null}
                         </div>
                     )})}
