@@ -669,7 +669,7 @@ button {
 }
 
 .footer__container {
-  row-gap: 0.50rem;
+  row-gap: 0.5rem;
 }
 
 .footer__logo {
@@ -683,6 +683,7 @@ button {
 
 .footer__logo-img {
   width: 20px;
+  height: 20px;
 }
 
 .footer__description {

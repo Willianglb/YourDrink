@@ -9,7 +9,8 @@ const Header = () => {
         <a href="#home" className="nav__logo">
           <img src={Logo} alt="" className="nav__logo-img" />
         </a>
-        <a href="#about" className="nav__link">Bebidas</a>     
+        <a href="#bebidas" className="nav__link">Bebidas</a>
+        <a href="#sobre" className="nav__link">Sobre</a>      
       </nav>
     </HeaderStyles>
   )

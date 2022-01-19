@@ -20,7 +20,7 @@ const HomeBanner = () => {
             centeredSlides={true}
             loop={true}
             spaceBetween={30}
-            slidesPerView={1.2}
+            slidesPerView={1.5}
             pagination={{clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}

@@ -3,6 +3,7 @@ import React from 'react';
 import HomeBanner from '../../components/HomeBanner/index';
 import Header from '../../components/Header/index';
 import ListDrinks from '../../components/ListDrinks/index';
+import emoji from '../../assets/img/emoji.png'
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
       </main>
 
       {/* <!--==================== FOOTER ====================--> */}
-      <footer className="footer section">
+      <footer className="footer section" id="sobre">
         <div className="footer__container container grid">
           <div className="footer__content">
             <a href="#" className="footer__logo">
-              <img src="assets/img/logo.png" alt="" className="footer__logo-img" />
+              <img src={emoji} alt="" className="footer__logo-img" />
               Birthday
             </a>
 
