@@ -27,7 +27,8 @@ const ListaBebidas = [
         name: "Red Highball Sweet",
         photo: OO1,
         Desc: "Whisky com morango e guaraná",
-        id: 1
+        id: 1,
+        href: 'redball'
     },
     {
         name: "Red Highball Citrus",
@@ -36,7 +37,7 @@ const ListaBebidas = [
         id: 2
     },
     {
-        name: "Shot Horse",
+        name: "Shot Whisky",
         photo: OO3,
         Desc: "Shot de whisky com gelo",
         id: 3
@@ -51,7 +52,8 @@ const ListaBebidas = [
         name: "Caipirinha de vinho",
         photo: OO5,
         Desc: "Caipirinha de vinho com limão",
-        id: 5
+        id: 5,
+        href: 'vinho'
     },
     {
         name: "Caipiroska de limão",
@@ -69,7 +71,8 @@ const ListaBebidas = [
         name: "Caipirinha de limão",
         photo: OO6,
         Desc: "Caipirinha feita com velho barreiro de limão",
-        id: 8
+        id: 8,
+        href: 'caipirinha'
     },
     {
         name: "Caipirinha de morango",
@@ -123,7 +126,7 @@ const ListDrinks = () => {
           <div className="trick__container container grid">
 
             {ListaBebidas.map((item) => (
-                <div className="trick__content" onClick={() => FireCheckout(item.Desc, item.name, item.photo, item.id)} key={item.id}>
+                <div className="trick__content" onClick={() => FireCheckout(item.Desc, item.name, item.photo, item.id)} key={item.id} id={item.href} >
                     <img
                     src={item.photo}
                     alt=""

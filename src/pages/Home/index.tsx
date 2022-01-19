@@ -27,31 +27,10 @@ function App() {
             </a>
 
             <p className="footer__description">Aproveite a festa.</p>
-
-            <div className="footer__social">
-              <a
-                href="https://www.linkedin.com/in/willianglb/"
-                className="footer__social-link"
-              >
-                <i className="bx bxl-facebook"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/willianglb/"
-                className="footer__social-link"
-              >
-                <i className="bx bxl-instagram-alt"></i>
-              </a>
-              <a
-                href="https://twitter.com/willglb"
-                className="footer__social-link"
-              >
-                <i className="bx bxl-twitter"></i>
-              </a>
-            </div>
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__title">Sobre:</h3>
+            <h3 className="footer__title">Desenvolvedores:</h3>
 
             <ul className="footer__links">
               <li>
@@ -60,7 +39,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#" className="footer__link">
+                <a href="https://www.instagram.com/gabriel_wedig/" className="footer__link">
                   Gabriel Wedig
                 </a>
               </li>
