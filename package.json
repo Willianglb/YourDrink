@@ -11,6 +11,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/react": "^16.14.21",
+    "@emotion/react": "^11.7.1",
+    "@mui/material": "latest",
     "@types/react-dom": "16.9.7",
     "@types/react-router-dom": "5.1.7",
     "@types/styled-components": "5.1.9",
@@ -49,9 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@emotion/react": "^11.7.1",
-    "@mui/material": "latest"
   }
 }
