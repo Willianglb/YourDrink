@@ -9,21 +9,20 @@ export const HeaderStyles = styled.header`
   z-index: 100;
 
   .nav {
-    height: 3.5rem;
+    height: 100%;
+    width: calc(100% - 48px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
   .nav__logo {
-    display: flex;
-    align-items: center;
-    column-gap: .5rem;
-    font-weight: var(--font-medium);
+    height: 75%;
   }
 
   .nav__logo-img {
-    width: 1.25rem;
+    width: 100%;
+    height: 100%;
   }
 
   .nav__link,
@@ -53,12 +52,7 @@ export const HeaderStyles = styled.header`
     }
   }
 
-  .nav__img {
-    width: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  
 
   .nav__close {
     font-size: 1.8rem;

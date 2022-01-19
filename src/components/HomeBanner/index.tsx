@@ -13,19 +13,15 @@ import barreiro from '../../assets/img/6.png';
 
 const HomeBanner = () => {
 
-    // Falta estilizar
-
     return (
         <BannerStyles>
         <div className="swiper-container" id="home" />
         <Swiper
-            autoplay={{delay: 3000}}
             centeredSlides={true}
             loop={true}
             spaceBetween={30}
             slidesPerView={1.2}
             pagination={{clickable: true }}
-            scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
             >
@@ -43,7 +39,7 @@ const HomeBanner = () => {
                             </div>
                         </div>
 
-                        <div className="home__data">
+                        <div className="home__data container">
                             <h3 className="home__subtitle">#1 Top Caipirinha</h3>
                             <p className="home__description"> Em média, 400Ml de vinho com 2 limão e 1 colher de açúcar.
                             </p>
@@ -65,7 +61,7 @@ const HomeBanner = () => {
                                     </div>
                                 </div>
 
-                                <div className="home__data">
+                                <div className="home__data container">
                                     <h3 className="home__subtitle">#2 Top Whisky</h3>
                                     <p className="home__description"> 50Ml de Red Label, 4 morangos macerados e o restante de guaraná.
                                     </p>
@@ -87,7 +83,7 @@ const HomeBanner = () => {
                                     </div>
                                 </div>
 
-                                <div className="home__data">
+                                <div className="home__data container">
                                     <h3 className="home__subtitle">#3 Top cachaça</h3>
                                     <p className="home__description"> Em média, 2 limões com 1 dose de cachaça e 1 colher de açúcar.
                                     </p>
