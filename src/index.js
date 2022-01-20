@@ -10,7 +10,7 @@ import {
 } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: 'https://yourdrink-express.herokuapp.com:8080/',
+  uri: 'https://yourdrink-express.herokuapp.com/',
   cache: new InMemoryCache()
 });
 
