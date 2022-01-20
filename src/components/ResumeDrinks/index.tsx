@@ -57,6 +57,18 @@ const ListaBebidas = [
         id: 7
     },
     {
+        name: "Caipirinha de limão",
+        photo: OO6,
+        Desc: "Caipirinha de limão feita com velho barreiro",
+        id: 8
+    },
+    {
+        name: "Caipirinha de morango",
+        photo: OO7,
+        Desc: "Caipirinha de morango feita com velho barreiro",
+        id: 9
+    },
+    {
         name: "Surprise",
         photo: OO8,
         Desc: "Gin, chá, baly e outras coisinhas...",
