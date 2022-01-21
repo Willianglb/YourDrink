@@ -46,6 +46,12 @@ export const ModalContent = styled.div`
     color: black;
     border: none;
   }
+  h1 {
+    font-size: 25px;
+  }
+  .p-margin {
+    margin-bottom: 15px;
+  }
 `;
 
 export const CloseModalButton = styled.button`
@@ -57,6 +63,10 @@ export const CloseModalButton = styled.button`
   height: 32px;
   padding: 0;
   z-index: 10;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
 `;
 
 export const Aviso = styled.p`

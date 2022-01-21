@@ -8,11 +8,11 @@ import TextField from '@mui/material/TextField';
 
 const ModalDrink = (foto : any, desc : string, title : string, handleClose: any) => (
         <Box sx={style}>
-            <Avatar
+            {/* <Avatar
                 alt={title}
                 src={foto}
                 sx={{ width: 56, height: 56 }}
-            />
+            /> */}
             <ModalContent>
                 <h1>{title}</h1>
                 <p>{desc}</p>

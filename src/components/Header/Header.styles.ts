@@ -19,6 +19,7 @@ export const HeaderStyles = styled.header`
 
   .nav__logo {
     height: 75%;
+    padding-right: 10px;
   }
 
   .nav__logo-img {

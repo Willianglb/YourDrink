@@ -148,15 +148,15 @@ const ListDrinks = () => {
                 open={openModal}
                 onClose={handleClose}
                 >
-                    <Box sx={style}>
-                        <Avatar
-                            alt={title}
-                            src={foto}
-                            sx={{ width: 90, height: 90, left: "40%" }}
-                        />
+                    <Box sx={style}>   
                         <S.ModalContent>
+                            <Avatar
+                                alt={title}
+                                src={foto}
+                                sx={{ width: 90, height: 90 }}
+                            />
                             <h1>{title}</h1>
-                            <p>{desc}</p>
+                            <p className="p-margin">{desc}</p>
                             {semNome && <S.Aviso>*Insira seu nome*</S.Aviso>}
                             <TextField
                                 sx={{bgcolor: "white"}}
@@ -194,7 +194,7 @@ const ListDrinks = () => {
                         <S.CloseModalButton
                             aria-label='Close modal'
                             onClick={() => handleClose()}
-                        />
+                        >X</S.CloseModalButton>
                     </Box>
                 </Modal>
             )}
