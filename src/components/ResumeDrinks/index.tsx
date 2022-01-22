@@ -87,19 +87,19 @@ const ListaBebidas = [
         name: "Água",
         photo: O1O,
         Desc: "Água",
-        id: 11
+        id: 12
     },
     {
         name: "Refrigerante",
         photo: O11,
         Desc: "Irei até ao local pegar qual deseja",
-        id: 11
+        id: 13
     },
     {
         name: "Suco de laranja",
         photo: O12,
         Desc: "Suco de laranja integral",
-        id: 11
+        id: 14
     }
 ]
 
