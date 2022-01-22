@@ -12,6 +12,9 @@ import OO6 from '../../assets/img/6.png';
 import OO7 from '../../assets/img/7.png';
 import OO8 from '../../assets/img/Surprise.jpg';
 import OO9 from '../../assets/img/dado.png';
+import O1O from '../../assets/img/agua2.webp';
+import O11 from '../../assets/img/refri.png';
+import O12 from '../../assets/img/sucoLaranja.png';
 
 const ListaBebidas = [
     {
@@ -78,6 +81,24 @@ const ListaBebidas = [
         name: "Aleatório",
         photo: OO9,
         Desc: "Bebida sorteada a partir da lista de bebidas",
+        id: 11
+    },
+    {
+        name: "Água",
+        photo: O1O,
+        Desc: "Água",
+        id: 11
+    },
+    {
+        name: "Refrigerante",
+        photo: O11,
+        Desc: "Irei até ao local pegar qual deseja",
+        id: 11
+    },
+    {
+        name: "Suco de laranja",
+        photo: O12,
+        Desc: "Suco de laranja integral",
         id: 11
     }
 ]
