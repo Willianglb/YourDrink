@@ -1,5 +1,4 @@
-import React from 'react';
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import HomeBanner from '../../components/HomeBanner/index';
 import Header from '../../components/Header/index';
 import ListDrinks from '../../components/ListDrinks/index';
